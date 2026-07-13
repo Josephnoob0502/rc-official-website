@@ -1280,18 +1280,10 @@ footer {
   }
 
   .line-b,
-  .ticket-b,
+  .floating-ticket,
   .ghost-dashboard,
   .scroll-cue {
     display: none;
-  }
-
-  .floating-ticket {
-    top: auto;
-    right: -58px;
-    bottom: 12%;
-    min-width: 180px;
-    opacity: 0.25;
   }
 
   .eyebrow {
