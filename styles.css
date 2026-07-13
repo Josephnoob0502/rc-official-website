@@ -25,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 1180px;
+  min-width: 0;
   background:
     radial-gradient(circle at 62% 16%, rgba(98, 255, 143, 0.08), transparent 28rem),
     linear-gradient(180deg, #020403 0%, #060806 46%, #020403 100%);
@@ -1152,10 +1152,6 @@ footer {
 }
 
 @media (max-width: 1280px) {
-  body {
-    min-width: 1024px;
-  }
-
   .section {
     padding-left: 48px;
     padding-right: 48px;
@@ -1168,6 +1164,437 @@ footer {
 
   .coming-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 74px;
+  }
+
+  body {
+    background: #020403;
+  }
+
+  .ambient {
+    background-size: 58px 58px;
+    opacity: 0.24;
+  }
+
+  .site-header {
+    padding: 16px 18px;
+    background: rgba(2, 4, 3, 0.78);
+  }
+
+  .brand-mark > span:last-child,
+  .site-header nav {
+    display: none;
+  }
+
+  .logo-mini {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .header-cta {
+    min-width: 90px;
+    height: 36px;
+  }
+
+  .section {
+    min-height: auto;
+    scroll-margin-top: 72px;
+    padding: 104px 20px;
+    overflow: hidden;
+  }
+
+  .hero {
+    min-height: 100svh;
+    padding-top: 112px;
+    padding-bottom: 82px;
+  }
+
+  .rc-logo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 26px;
+    border-radius: 18px;
+    font-size: 24px;
+  }
+
+  .rc-logo.small {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 28px;
+    border-radius: 16px;
+    font-size: 21px;
+  }
+
+  h1 {
+    font-size: 82px;
+    line-height: 0.88;
+  }
+
+  h2,
+  .dashboard h2,
+  .final h2 {
+    max-width: 560px;
+    font-size: 46px;
+    line-height: 1.02;
+  }
+
+  .hero-slogan {
+    margin-top: 28px;
+    font-size: 23px;
+  }
+
+  .hero-subtitle {
+    max-width: 310px;
+    margin: 14px auto 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: min(100%, 380px);
+    margin: 34px auto 0;
+  }
+
+  .button {
+    min-width: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .orbit-line {
+    top: 18%;
+    right: -220px;
+    width: 420px;
+    height: 420px;
+    opacity: 0.65;
+  }
+
+  .line-b,
+  .ticket-b,
+  .ghost-dashboard,
+  .scroll-cue {
+    display: none;
+  }
+
+  .floating-ticket {
+    top: auto;
+    right: -58px;
+    bottom: 12%;
+    min-width: 180px;
+    opacity: 0.25;
+  }
+
+  .eyebrow {
+    margin-bottom: 16px;
+    font-size: 11px;
+  }
+
+  .split-lines {
+    gap: 8px;
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .pain,
+  .ai-section,
+  .analytics,
+  .coming,
+  .platforms,
+  .delivery,
+  .exchange {
+    gap: 42px;
+  }
+
+  .ledger-field,
+  .ai-stage,
+  .analytics-stage,
+  .timeline,
+  .trade-flow,
+  .coming-grid,
+  .platform-stack {
+    width: 100%;
+  }
+
+  .ledger-row {
+    grid-template-columns: 1fr auto;
+    gap: 7px 18px;
+    padding: 15px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .ledger-row > span:first-child {
+    grid-column: 1 / -1;
+    color: rgba(244, 247, 241, 0.86);
+    font-weight: 700;
+  }
+
+  .ai-stage {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .prompt-panel,
+  .result-panel {
+    min-height: 0;
+    padding: 24px 20px;
+    border-radius: 8px;
+  }
+
+  .typing-text {
+    font-size: 22px;
+  }
+
+  .ai-pulse {
+    margin-top: 34px;
+  }
+
+  .analysis-beam {
+    width: 2px;
+    height: 46px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, transparent, var(--green), transparent);
+  }
+
+  .result-panel li {
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .giant-number {
+    margin-bottom: 30px;
+    font-size: 62px;
+    white-space: nowrap;
+  }
+
+  .metric-strip {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+
+  .metric-strip div {
+    padding: 20px;
+  }
+
+  .metric-strip strong {
+    font-size: 21px;
+  }
+
+  .chart-panel {
+    padding: 22px 16px 20px;
+  }
+
+  .chart-header {
+    display: grid;
+    gap: 22px;
+  }
+
+  .chart-total-row strong {
+    font-size: 30px;
+  }
+
+  .time-tabs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    width: 100%;
+  }
+
+  .time-tabs button {
+    width: 100%;
+  }
+
+  .profit-chart {
+    height: 268px;
+    margin-top: 30px;
+  }
+
+  .chart-bars {
+    gap: 5px;
+  }
+
+  .chart-bar-visual {
+    right: 7%;
+    left: 7%;
+  }
+
+  .chart-bar-item {
+    touch-action: manipulation;
+  }
+
+  .chart-footer {
+    gap: 18px;
+  }
+
+  .analytics-lower {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .analytics-lower > div {
+    min-height: 0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .time-card {
+    padding: 26px 22px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .time-card strong {
+    font-size: 58px;
+  }
+
+  .timeline-line {
+    width: 2px;
+    height: 46px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, var(--green), rgba(255, 255, 255, 0.1));
+  }
+
+  .timeline-items > div {
+    min-height: 66px;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .trade-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .trade-node {
+    min-height: 0;
+    padding: 24px 22px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .trade-node strong {
+    margin: 20px 0 12px;
+    font-size: 28px;
+  }
+
+  .trade-arrow {
+    width: 2px;
+    height: 42px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, transparent, var(--green), transparent);
+  }
+
+  .trade-profit {
+    position: static;
+    width: max-content;
+    max-width: 100%;
+    margin: 22px auto 0;
+    padding: 14px 18px;
+    transform: none;
+  }
+
+  .coming-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .coming-grid > div {
+    min-height: 112px;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  .platform-note {
+    margin-top: 24px;
+    font-size: 17px;
+  }
+
+  .platform-row {
+    min-height: 72px;
+    padding: 0 18px;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+  .platform-row strong {
+    font-size: 14px;
+  }
+
+  .final {
+    min-height: 100svh;
+  }
+
+  .final::before {
+    inset: 30% -20% auto;
+  }
+
+  .final p {
+    margin: 26px 0 30px;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+  .final .button {
+    width: min(100%, 320px);
+  }
+
+  footer {
+    margin-top: 62px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  h2,
+  .dashboard h2,
+  .final h2 {
+    font-size: 40px;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+    max-width: 260px;
+  }
+
+  .giant-number {
+    font-size: 52px;
+  }
+
+  .metric-strip div {
+    padding: 18px 15px;
+  }
+
+  .chart-bar-label {
+    font-size: 9px;
+  }
+
+  .coming-grid > div {
+    min-height: 98px;
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
